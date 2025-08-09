@@ -22,7 +22,7 @@
     };
 
     onMount(async () => {
-        const apiResponse = await fetch("http://ip-api.com/json/?fields=status,message,country,region,regionName,city,zip,lat,lon,timezone,isp,org,as,proxy,query");
+        const apiResponse = await fetch("https://ip-api.com/json/?fields=status,message,country,region,regionName,city,zip,lat,lon,timezone,isp,org,as,proxy,query");
 
         if (apiResponse.ok) {
             data = await apiResponse.json();
